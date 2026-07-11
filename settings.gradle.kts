@@ -1,4 +1,4 @@
-rootProject.name = "GeyserModelEngineFix"
+rootProject.name = "GeyserModelEngine"
 
 include("paper")
 include("geyser")

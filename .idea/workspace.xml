@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff2e9770-ec88-4715-adeb-b9dbda130e1a" name="Changes" comment="Changes" />
+    <list default="true" id="ff2e9770-ec88-4715-adeb-b9dbda130e1a" name="Changes" comment="Changes">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geyser/libs/geyserutils-geyser-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/geyser/libs/geyserutils-geyser-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paper/libs/geyserutils-spigot-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/paper/libs/geyserutils-spigot-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +74,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/sorandno/GeyserModelEngineFix&quot;,
+    &quot;url&quot;: &quot;https://github.com/sorandno/GeyserModelEngine&quot;,
     &quot;accountId&quot;: &quot;fcd75a6e-4751-4429-94a1-9a5d5efff412&quot;
   }
 }</component>
@@ -99,6 +105,7 @@
     &quot;Gradle.GeyserModelEngine [buildDependents].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.GeyserModelEngine [buildNeeded].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.GeyserModelEngine [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GeyserModelEngine [clean build].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.GeyserModelEngine [clean].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.GeyserModelEngine [jar].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.GeyserModelEngineFix [clean build].executor&quot;: &quot;Run&quot;,
@@ -135,7 +142,7 @@
       <recent name="D:\Coding\Forks\Minecraft\GeyserModelEngine\libs" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.GeyserModelEngineFix [clean build]">
+  <component name="RunManager" selected="Gradle.GeyserModelEngine [clean build]">
     <configuration name="GeyserModelEngine [:geyser:build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -211,6 +218,32 @@
       <GradleCoverageDisabled>false</GradleCoverageDisabled>
       <method v="2" />
     </configuration>
+    <configuration name="GeyserModelEngine [clean build]" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--refresh-dependencies" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
+      <method v="2" />
+    </configuration>
     <configuration name="GeyserModelEngine [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -261,34 +294,8 @@
       <GradleCoverageDisabled>false</GradleCoverageDisabled>
       <method v="2" />
     </configuration>
-    <configuration name="GeyserModelEngineFix [clean build]" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--refresh-dependencies" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <GradleProfilingDisabled>false</GradleProfilingDisabled>
-      <GradleCoverageDisabled>false</GradleCoverageDisabled>
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Gradle.GeyserModelEngineFix [clean build]" />
+      <item itemvalue="Gradle.GeyserModelEngine [clean build]" />
       <item itemvalue="Gradle.GeyserModelEngine [:geyser:build]" />
       <item itemvalue="Gradle.GeyserModelEngine [assemble]" />
       <item itemvalue="Gradle.GeyserModelEngine [build]" />
@@ -351,7 +358,15 @@
       <option name="project" value="LOCAL" />
       <updated>1783258139649</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Changes">
+      <option name="closed" value="true" />
+      <created>1783258704970</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1783258704970</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
