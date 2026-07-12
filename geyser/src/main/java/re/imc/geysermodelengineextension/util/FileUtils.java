@@ -50,6 +50,23 @@ public class FileUtils {
         }
     }
 
+    public static void deleteDirectory(File directory) {
+        if (directory == null || !directory.exists()) return;
+
+        File[] files = directory.listFiles();
+        if (files != null) {
+            for (File file : files) {
+                if (file.isDirectory()) {
+                    deleteDirectory(file);
+                } else {
+                    file.delete();
+                }
+            }
+        }
+
+        directory.delete();
+    }
+
     public static JsonObject getJsonObject(File file) {
         try (FileReader reader = new FileReader(file)) {
             return JsonParser.parseReader(reader).getAsJsonObject();

@@ -6,6 +6,7 @@ import org.geysermc.geyser.api.command.CommandSource;
 import org.geysermc.geyser.api.event.lifecycle.GeyserDefineCommandsEvent;
 import org.geysermc.geyser.api.event.lifecycle.GeyserDefineResourcePacksEvent;
 import org.geysermc.geyser.api.event.lifecycle.GeyserPreInitializeEvent;
+import org.geysermc.geyser.api.event.lifecycle.GeyserShutdownEvent;
 import org.geysermc.geyser.api.extension.Extension;
 import org.geysermc.geyser.api.pack.PackCodec;
 import org.geysermc.geyser.api.pack.ResourcePack;
@@ -27,6 +28,11 @@ public class GeyserModelEngineExtension implements Extension {
         loadManagers();
 
         resourcePackManager.loadPack();
+    }
+
+    @Subscribe
+    public void onShutdown(GeyserShutdownEvent event) {
+        if (resourcePackManager != null) resourcePackManager.deleteGeneratedPack();
     }
 
     @Subscribe

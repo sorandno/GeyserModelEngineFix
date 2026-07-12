@@ -8,6 +8,7 @@ import com.google.gson.JsonParser;
 import re.imc.geysermodelengineextension.GeyserModelEngineExtension;
 import re.imc.geysermodelengineextension.managers.resourcepack.generator.*;
 import re.imc.geysermodelengineextension.managers.resourcepack.generator.data.TextureData;
+import re.imc.geysermodelengineextension.util.FileUtils;
 import re.imc.geysermodelengineextension.util.ShortHashUtil;
 import re.imc.geysermodelengineextension.util.ZipUtil;
 
@@ -58,6 +59,12 @@ public class ResourcePackManager {
         for (Entity entity : entityCache.values()) {
             entity.register(extension.getConfigManager().getConfig().getString("models.namespace"));
         }
+    }
+
+    // Bedrock クライアントが 3D テクスチャを表示できたりできなかったりする不具合対策。
+    // 無効化時に生成済みパックを削除しておき、次回起動時に必ずゼロから再生成させる。
+    public void deleteGeneratedPack() {
+        FileUtils.deleteDirectory(extension.dataFolder().resolve("ResourcePack").toFile());
     }
 
     private int nextPackVersion() {
